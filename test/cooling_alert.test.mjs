@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { batteryTemperatureToAction,
-  PASSIVE_COOLING,
+  PASSIVE_COOLING, ACTIVE_COOLING,
   ALERT_EMAIL, NO_ACTION } from '../cooling_alert.mjs';
 
 // ----------- STEP 2 -----------------
@@ -9,7 +9,7 @@ import { batteryTemperatureToAction,
 //   - Input parameters data-model
 //   - Expected output data-model
 
-describe("Cooling Alert", () => {
+describe("Passive cooling alert", () => {
   it("should trigger an alert when temperature exceeds threshold", () => {
     const action = batteryTemperatureToAction(PASSIVE_COOLING, 45.0);
     expect(action.actionType).equals(ALERT_EMAIL);
@@ -22,3 +22,13 @@ describe("Cooling Alert", () => {
 });
 
 // ----------- STEP 2 code ends -------
+
+// ----------- STEP 4 -----------------
+// Add the next straight-forward test: active cooling type
+describe("Active cooling alert", () => {
+  it("should not trigger an alert when temperature is within threshold", () => {
+    const action = batteryTemperatureToAction(ACTIVE_COOLING, 65.0);
+    expect(action.actionType).equals(ALERT_EMAIL);
+    expect(action.actionBody).equals('Temperature alert: 65F');
+  });
+});
