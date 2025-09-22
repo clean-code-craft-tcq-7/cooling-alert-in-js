@@ -1,9 +1,11 @@
 import { expect } from 'chai';
-import { batteryTemperatureToAction,
-  PASSIVE_COOLING, ACTIVE_COOLING,
-  ALERT_EMAIL, NO_ACTION } from '../cooling_alert.mjs';
 
 // ----------- STEP 2 -----------------
+
+// import { batteryTemperatureToAction,
+//   PASSIVE_COOLING, ACTIVE_COOLING,
+//   ALERT_EMAIL, NO_ACTION } from '../cooling_alert.mjs';
+
 // Establish one "straight forward" interface (happy flow):
 //   - Function name
 //   - Input parameters data-model
