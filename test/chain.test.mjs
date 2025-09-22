@@ -1,8 +1,8 @@
-import { expect } from 'chai';
-import { THERMAL_ACTIVE} from '../thermal_management_types.mjs';
-import { batteryDataToAction } from '../chain.mjs';
-
 // ----------- STEP 6 code starts -------
+
+// import { expect } from 'chai';
+// import { THERMAL_ACTIVE} from '../thermal_management_types.mjs';
+// import { batteryDataToAction } from '../chain.mjs';
 
 // describe('Battery data to action', () => {
 //     it('converts high battery temperature to email alert', () => {
