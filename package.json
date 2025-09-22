@@ -1,0 +1,26 @@
+{
+  "name": "cooling-alert-in",
+  "version": "1.0.0",
+  "description": "Rechargeable batteries can heat during charging and discharging. Different thermal management techniques are used based on their capacity and performance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clean-code-craft-tcq-7/cooling-alert-in-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/clean-code-craft-tcq-7/cooling-alert-in-js/issues"
+  },
+  "homepage": "https://github.com/clean-code-craft-tcq-7/cooling-alert-in-js#readme",
+  "devDependencies": {
+    "chai": "^6.0.1",
+    "eslint": "^9.36.0",
+    "mocha": "^11.7.2"
+  }
+}
